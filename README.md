@@ -1,4 +1,5 @@
 # NimbleShift
+
 ### Akıllı Vardiya Planlama ve Personel Yönetim Sistemi
 
 NimbleShift, işletmelerin personel yönetimi, izin takibi ve vardiya planlama süreçlerini tek bir platform üzerinden yönetebilmesini amaçlayan SaaS tabanlı bir uygulamadır.

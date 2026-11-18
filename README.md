@@ -52,3 +52,31 @@ NimbleShift geliştirme ve gerçek kullanıma hazırlık aşamasındadır. Ödem
 - Abonelik ve ödeme entegrasyonu
 - Mobil deneyimin geliştirilmesi
 - Kapsamlı test ve raporlama
+- ## Application Screenshots
+
+### Dashboard
+![Kontrol Paneli](<docs/docs/docs/docs/docs/tests/screenshots/Kontrol Paneli.png>)
+
+### Employee Management
+![Personel Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/Personel Yönetimi.png>)
+
+### Leave Management
+![İzin Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/İzin Yönetimi.png>)
+
+### Shift Planning
+![Vardiya Planlama](<docs/docs/docs/docs/docs/tests/screenshots/Vardiya planlama.png>)
+
+### Monthly Shift Calendar
+![Aylık Vardiya Takvimi](<docs/docs/docs/docs/docs/tests/screenshots/Aylık Vardiya Takvimi.png>)
+
+### Availability Calendar
+![Müsaitlik Takvimi](<docs/docs/docs/docs/docs/tests/screenshots/Müsaitlik Takvimi.png>)
+
+### Rules and Preferences
+![Kurallar ve Tercihler](<docs/docs/docs/docs/docs/tests/screenshots/Kurallar ve Tercihler.png>)
+
+### Reports and Overtime
+![Raporlar ve Fazla Mesai](<docs/docs/docs/docs/docs/tests/screenshots/Raporlar ve Fazla Mesai.png>)
+
+### Subscription Management
+![Abonelik](<docs/docs/docs/docs/docs/tests/screenshots/Abonelik.png>)

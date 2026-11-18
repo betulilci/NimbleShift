@@ -52,7 +52,8 @@ Bu yaklaşım tam kapsamlı matematiksel optimizasyon değildir ve geliştirilme
 ![Personel Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/Personel Yönetimi.png>)
 
 ### İzin Yönetimi
-![İzin Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/İzin Yönetimi.png>)
+
+![İzin Yönetimi](screenshots/%C4%B0zin%20Y%C3%B6netimi.png)
 
 ### Vardiya Planlama
 ![Vardiya Planlama](<docs/docs/docs/docs/docs/tests/screenshots/Vardiya planlama.png>)

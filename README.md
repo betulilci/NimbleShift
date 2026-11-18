@@ -85,4 +85,4 @@ NimbleShift geliştirme ve gerçek kullanıma hazırlık aşamasındadır. Ödem
 
 ## Geliştirici Notu
 
-Bu proje, personel yönetimi ve vardiya planlama süreçlerini kolaylaştırmak amacıyla geliştirilmekte olan bir SaaS uygulamasıdır.</WritingBlock
+Bu proje, personel yönetimi ve vardiya planlama süreçlerini kolaylaştırmak amacıyla geliştirilmekte olan bir SaaS uygulamasıdır.

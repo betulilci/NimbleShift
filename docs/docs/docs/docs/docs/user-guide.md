@@ -1,46 +1,46 @@
-# NimbleShift – User Guide
+# NimbleShift – Kullanım Kılavuzu
 
-## 1. Introduction
+## 1. Giriş
 
-NimbleShift is a workforce and shift management application designed to help businesses manage employees, leave requests, staffing requirements, and shift schedules.
+NimbleShift, işletmelerin personel yönetimi, izin talepleri ve vardiya planlama süreçlerini kolaylaştırmak için geliştirilmiş bir personel yönetim uygulamasıdır.
 
-## 2. User Roles
+## 2. Kullanıcı Rolleri
 
-The application supports three user roles:
+Uygulama üç temel kullanıcı rolünü desteklemektedir:
 
-- **Yönetici:** Manages business operations, employees, leave requests, and shift planning.
-- **Planlayıcı:** Helps organize and manage shift schedules according to assigned permissions.
-- **Personel:** Views personal shift information and uses the available employee features.
+- **Yönetici:** İşletme işlemlerini, personelleri, izin taleplerini ve vardiya planlamasını yönetir.
+- **Planlayıcı:** Kendisine verilen yetkiler doğrultusunda vardiya planlama ve yönetim süreçlerine yardımcı olur.
+- **Personel:** Kendi vardiya bilgilerini görüntüler ve kendisine sunulan personel özelliklerini kullanır.
 
-## 3. Business Setup
+## 3. İşletme Kurulumu
 
-A business manager can configure the business and manage its workforce through the application.
+İşletme yöneticisi, uygulama üzerinden işletme bilgilerini yapılandırabilir ve personel yönetimini gerçekleştirebilir.
 
-Employees can be associated with a business through the available invitation process.
+Personeller, mevcut davet süreci aracılığıyla bir işletmeyle ilişkilendirilebilir.
 
-## 4. Employee Management
+## 4. Personel Yönetimi
 
-Authorized users can manage employee records and relevant employment information.
+Yetkili kullanıcılar personel kayıtlarını ve ilgili çalışma bilgilerini yönetebilir.
 
-Employee access and management operations depend on the assigned role and business association.
+Personel ekleme, düzenleme ve görüntüleme işlemleri kullanıcının rolüne ve işletme ilişkisine göre sınırlandırılır.
 
-## 5. Leave Management
+## 5. İzin Yönetimi
 
-Employees can submit leave requests.
+Personeller uygulama üzerinden izin talebi oluşturabilir.
 
-Authorized users can review requests and:
+Yetkili kullanıcılar izin taleplerini inceleyerek:
 
-- Approve a request
-- Reject a request
-- Return a previous decision to pending status, where permitted
+- İzin talebini onaylayabilir.
+- İzin talebini reddedebilir.
+- İzin kararını, yetkileri dahilinde beklemede durumuna geri alabilir.
 
-Leave records include a status to track the decision process.
+İzin kayıtlarında karar sürecini takip etmek için durum bilgisi kullanılır.
 
-## 6. Shift Management
+## 6. Vardiya Yönetimi
 
-Authorized users can create and manage shifts.
+Yetkili kullanıcılar vardiya oluşturabilir ve mevcut vardiyaları yönetebilir.
 
-Shift records support different statuses, including:
+Vardiya kayıtlarında aşağıdaki durumlar kullanılmaktadır:
 
 - Planlandı
 - Onaylandı
@@ -48,33 +48,33 @@ Shift records support different statuses, including:
 - İptal Edildi
 - Eksik
 
-Available actions depend on the user's role and the shift's current state.
+Kullanılabilecek işlemler, kullanıcının rolüne ve vardiyanın mevcut durumuna bağlıdır.
 
-## 7. Smart Shift Planning
+## 7. Akıllı Vardiya Planlama
 
-The smart planning feature helps managers generate shift suggestions.
+Akıllı vardiya planlama özelliği, yöneticilerin vardiya önerileri oluşturmasına yardımcı olur.
 
-The general process is:
+Genel kullanım süreci:
 
-1. Define staffing requirements.
-2. Start smart planning.
-3. Review generated suggestions.
-4. Regenerate suggestions when needed.
-5. Approve suitable suggestions.
-6. Discard suggestions that are not needed.
+1. Personel ihtiyaçlarını tanımlayın.
+2. Akıllı planlama işlemini başlatın.
+3. Oluşturulan vardiya önerilerini inceleyin.
+4. Gerektiğinde önerileri yeniden oluşturun.
+5. Uygun önerileri onaylayın.
+6. İhtiyaç duyulmayan önerileri silin.
 
-Approved suggestions become actual planned shifts.
+Onaylanan öneriler gerçek planlanmış vardiyalara dönüştürülür.
 
-## 8. Subscription Packages
+## 8. Abonelik Paketleri
 
-NimbleShift includes subscription package definitions.
+NimbleShift farklı abonelik paketlerini destekleyecek şekilde tasarlanmıştır.
 
-Package limits and available features depend on the selected package.
+Paket limitleri ve kullanılabilir özellikler seçilen pakete göre değişebilir.
 
-Payment integration is not yet considered production-ready.
+Ödeme entegrasyonu henüz gerçek kullanıma hazır kabul edilmemektedir.
 
-## 9. Important Notes
+## 9. Önemli Notlar
 
-This guide describes the application's intended functionality at a high level.
+Bu kılavuz uygulamanın mevcut ve hedeflenen işlevlerini genel hatlarıyla açıklar.
 
-Some workflows and features still require practical validation before public release.
+Bazı iş akışları ve özellikler gerçek kullanıma açılmadan önce uygulamalı olarak doğrulanmalıdır.

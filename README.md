@@ -1,5 +1,4 @@
 # NimbleShift
-
 ### Akıllı Vardiya Planlama ve Personel Yönetim Sistemi
 
 NimbleShift, işletmelerin personel yönetimi, izin takibi ve vardiya planlama süreçlerini tek bir platform üzerinden yönetebilmesini amaçlayan SaaS tabanlı bir uygulamadır.
@@ -47,40 +46,31 @@ Bu yaklaşım tam kapsamlı matematiksel optimizasyon değildir ve geliştirilme
 ## Uygulama Ekran Görüntüleri
 
 ### Ana Sayfa (Kontrol Paneli)
-
-![Kontrol Paneli](screenshots/Kontrol%20Paneli.png)
+![Kontrol Paneli](<docs/docs/docs/docs/docs/tests/screenshots/Kontrol Paneli.png>)
 
 ### Personel Yönetimi
-
-![Personel Yönetimi](screenshots/Personel%20Y%C3%B6netimi.png)
+![Personel Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/Personel Yönetimi.png>)
 
 ### İzin Yönetimi
-
-![İzin Yönetimi](screenshots/%C4%B0zin%20Y%C3%B6netimi.png)
+![İzin Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/İzin Yönetimi.png>)
 
 ### Vardiya Planlama
-
-![Vardiya Planlama](screenshots/Vardiya%20planlama.png)
+![Vardiya Planlama](<docs/docs/docs/docs/docs/tests/screenshots/Vardiya planlama.png>)
 
 ### Aylık Vardiya Takvimi
-
-![Aylık Vardiya Takvimi](screenshots/Ayl%C4%B1k%20Vardiya%20Takvimi.png)
+![Aylık Vardiya Takvimi](<docs/docs/docs/docs/docs/tests/screenshots/Aylık Vardiya Takvimi.png>)
 
 ### Müsaitlik Takvimi
-
-![Müsaitlik Takvimi](screenshots/M%C3%BCsaitlik%20Takvimi.png)
+![Müsaitlik Takvimi](<docs/docs/docs/docs/docs/tests/screenshots/Müsaitlik Takvimi.png>)
 
 ### Kurallar ve Tercihler
-
-![Kurallar ve Tercihler](screenshots/Kurallar%20ve%20Tercihler.png)
+![Kurallar ve Tercihler](<docs/docs/docs/docs/docs/tests/screenshots/Kurallar ve Tercihler.png>)
 
 ### Raporlar ve Fazla Mesai
-
-![Raporlar ve Fazla Mesai](screenshots/Raporlar%20ve%20Fazla%20Mesai.png)
+![Raporlar ve Fazla Mesai](<docs/docs/docs/docs/docs/tests/screenshots/Raporlar ve Fazla Mesai.png>)
 
 ### Abonelik Yönetimi
-
-![Abonelik](screenshots/Abonelik.png)
+![Abonelik](<docs/docs/docs/docs/docs/tests/screenshots/Abonelik.png>)
 
 ## Proje Durumu
 

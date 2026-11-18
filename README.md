@@ -43,36 +43,34 @@ Bu yaklaşım tam kapsamlı matematiksel optimizasyon değildir ve geliştirilme
 - Planlayıcı
 - Personel
 
-## Uygulama Ekran Görüntüleri
+## Ekran Görüntüleri
 
-### Ana Sayfa (Kontrol Paneli)
-![Kontrol Paneli](<docs/docs/docs/docs/docs/tests/screenshots/Kontrol Paneli.png>)
+### Kontrol Paneli
+![Kontrol Paneli](screenshots/Kontrol%20Paneli.png)
 
 ### Personel Yönetimi
-![Personel Yönetimi](<docs/docs/docs/docs/docs/tests/screenshots/Personel Yönetimi.png>)
+![Personel Yönetimi](screenshots/Personel%20Y%C3%B6netimi.png)
 
 ### İzin Yönetimi
-
 ![İzin Yönetimi](screenshots/%C4%B0zin%20Y%C3%B6netimi.png)
 
 ### Vardiya Planlama
-![Vardiya Planlama](<docs/docs/docs/docs/docs/tests/screenshots/Vardiya planlama.png>)
+![Vardiya Planlama](screenshots/Vardiya%20planlama.png)
 
 ### Aylık Vardiya Takvimi
-![Aylık Vardiya Takvimi](<docs/docs/docs/docs/docs/tests/screenshots/Aylık Vardiya Takvimi.png>)
+![Aylık Vardiya Takvimi](screenshots/Ayl%C4%B1k%20Vardiya%20Takvimi.png)
 
 ### Müsaitlik Takvimi
-![Müsaitlik Takvimi](<docs/docs/docs/docs/docs/tests/screenshots/Müsaitlik Takvimi.png>)
+![Müsaitlik Takvimi](screenshots/M%C3%BCsaitlik%20Takvimi.png)
 
 ### Kurallar ve Tercihler
-![Kurallar ve Tercihler](<docs/docs/docs/docs/docs/tests/screenshots/Kurallar ve Tercihler.png>)
+![Kurallar ve Tercihler](screenshots/Kurallar%20ve%20Tercihler.png)
 
 ### Raporlar ve Fazla Mesai
-![Raporlar ve Fazla Mesai](<docs/docs/docs/docs/docs/tests/screenshots/Raporlar ve Fazla Mesai.png>)
+![Raporlar ve Fazla Mesai](screenshots/Raporlar%20ve%20Fazla%20Mesai.png)
 
-### Abonelik Yönetimi
-![Abonelik](<docs/docs/docs/docs/docs/tests/screenshots/Abonelik.png>)
-
+### Abonelik
+![Abonelik](screenshots/Abonelik.png)
 ## Proje Durumu
 
 NimbleShift geliştirme ve gerçek kullanıma hazırlık aşamasındadır. Ödeme entegrasyonu ve canlı ortam doğrulamaları henüz tamamlanmış kabul edilmemektedir.

@@ -1,37 +1,37 @@
-# NimbleShift – Database Structure
+# NimbleShift – Veritabanı Yapısı
 
-## 1. Overview
+## 1. Genel Bakış
 
-NimbleShift uses Bubble's built-in database to store business, employee, leave, shift, and planning information.
+NimbleShift, işletme, personel, izin, vardiya ve planlama bilgilerini saklamak için Bubble'ın yerleşik veritabanını kullanır.
 
-The database is organized around seven main data types.
+Veritabanı yedi ana veri türünden oluşmaktadır.
 
-## 2. Main Data Types
+## 2. Ana Veri Türleri
 
 ### İşletmeler
-Stores business-level information and subscription-related data.
+İşletmelere ait temel bilgileri ve abonelikle ilgili verileri saklar.
 
 ### Kullanıcılar
-Stores application user information and role-related data.
+Uygulama kullanıcılarına ait bilgileri ve kullanıcı rolüyle ilgili verileri saklar.
 
 ### Personel
-Stores employee records and their business association.
+Personel kayıtlarını ve personelin bağlı olduğu işletme bilgilerini saklar.
 
 ### İzinler
-Stores employee leave requests and their approval status.
+Personel izin taleplerini ve bu taleplerin onay durumlarını saklar.
 
 ### Vardiyalar
-Stores shift records, including planned shifts and draft suggestions.
+Planlanmış vardiyaları ve taslak vardiya önerilerini saklar.
 
 ### Kurallar
-Stores rules used in shift planning.
+Vardiya planlama sürecinde kullanılan kuralları saklar.
 
 ### Personel İhtiyaçları
-Stores staffing requirements used when creating shift suggestions.
+Vardiya önerileri oluşturulurken dikkate alınan personel ihtiyaçlarını saklar.
 
-## 3. Option Sets
+## 3. Seçenek Kümeleri (Option Sets)
 
-The application currently uses the following Option Sets:
+Uygulamada şu anda dokuz seçenek kümesi kullanılmaktadır:
 
 - Abonelik Paketi
 - Görev Unvanı
@@ -43,24 +43,24 @@ The application currently uses the following Option Sets:
 - Vardiya Durumu
 - Çalışma Türü
 
-## 4. Data Relationships
+## 4. Veri İlişkileri
 
-The application is designed to associate operational records with their relevant business.
+Uygulamadaki operasyonel kayıtlar, ilgili işletmeyle ilişkilendirilecek şekilde tasarlanmıştır.
 
-Employee, leave, shift, rule, and staffing requirement records use business-related relationships to support business-level data separation.
+Personel, izin, vardiya, kural ve personel ihtiyaçları kayıtlarında işletme ilişkileri kullanılarak işletme bazlı veri ayrımı desteklenir.
 
-## 5. Access Control
+## 5. Erişim Kontrolü
 
-Bubble Privacy Rules and workflow conditions are used to restrict access to business data.
+İşletme verilerine erişimi sınırlandırmak için Bubble Gizlilik Kuralları (Privacy Rules) ve iş akışı koşulları kullanılmaktadır.
 
-Users should only be able to access records permitted by their business association and application role.
+Kullanıcılar yalnızca işletme ilişkileri ve kullanıcı rollerinin izin verdiği kayıtlara erişebilmelidir.
 
-## 6. Data Integrity
+## 6. Veri Tutarlılığı
 
-Workflow conditions are used to protect important operations, including shift approval, leave decisions, and employee management.
+Vardiya onaylama, izin kararları ve personel yönetimi gibi önemli işlemlerde veri tutarlılığını korumak için iş akışı koşulları kullanılmaktadır.
 
-Detailed field definitions and relationship validation should be maintained as the Bubble database evolves.
+## 7. Mevcut Kapsam
 
-## 7. Current Scope
+Bu belge bilinen veritabanı yapısını genel hatlarıyla açıklar.
 
-This document describes the known high-level database structure. It does not claim that every field, relationship, or privacy rule has been independently verified.
+Tüm alanların, veri ilişkilerinin ve gizlilik kurallarının ayrıntılı olarak doğrulandığı anlamına gelmez.

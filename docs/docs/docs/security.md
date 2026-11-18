@@ -1,74 +1,80 @@
-# NimbleShift – Security
+# NimbleShift – Güvenlik
 
-## 1. Overview
+## 1. Genel Bakış
 
-NimbleShift uses Bubble's built-in authentication, Privacy Rules, and workflow conditions to protect application data.
+NimbleShift, uygulama verilerini korumak için Bubble'ın yerleşik kimlik doğrulama sistemini, gizlilik kurallarını ve iş akışı koşullarını kullanır.
 
-Security is designed around business ownership and user roles.
+Güvenlik yaklaşımı, işletme sahipliği ve kullanıcı rolleri temelinde tasarlanmıştır.
 
-## 2. Authentication
+## 2. Kullanıcı Kimlik Doğrulama
 
-The application uses Bubble User Authentication.
+Uygulamada Bubble kullanıcı kimlik doğrulama sistemi kullanılmaktadır.
 
-The configured password policy includes:
+Yapılandırılmış parola politikası şu koşulları içerir:
 
-- Minimum 8 characters
-- At least one number
-- At least one uppercase letter
-- At least one non-alphanumeric character
+- En az 8 karakter
+- En az bir rakam
+- En az bir büyük harf
+- En az bir özel karakter
 
-## 3. User Roles
+## 3. Kullanıcı Rolleri
 
-NimbleShift has three main user roles:
+NimbleShift üç temel kullanıcı rolüne sahiptir:
 
 - Yönetici
 - Planlayıcı
 - Personel
 
-Access to application features is restricted according to user roles.
+Uygulama özelliklerine erişim, kullanıcının rolüne göre sınırlandırılmaktadır.
 
-## 4. Business Data Isolation
+## 4. İşletme Bazlı Veri Güvenliği
 
-Business-related records are designed to be accessible only to authorized users associated with the same business.
+İşletmeyle ilişkili kayıtların yalnızca aynı işletmeye bağlı yetkili kullanıcılar tarafından erişilebilir olması hedeflenmektedir.
 
-Privacy Rules use business ownership conditions to restrict access.
+Veri erişimini sınırlandırmak için Bubble Gizlilik Kuralları kullanılmaktadır.
 
-## 5. Workflow-Level Protection
+## 5. İş Akışı Düzeyinde Güvenlik
 
-Workflow conditions provide additional protection for important operations, including:
+Önemli işlemlerde ek güvenlik kontrolleri uygulanmaktadır.
 
-- Shift creation and approval
-- Shift cancellation and exchange
-- Leave approval and rejection
-- Employee management
-- Subscription package limits
+Bunlar arasında:
 
-## 6. Invitation Code Protection
+- Vardiya oluşturma ve onaylama
+- Vardiya iptali ve değişimi
+- İzin onaylama ve reddetme
+- Personel yönetimi
+- Abonelik paketi limitleri
 
-Business invitation codes are treated as sensitive information.
+yer almaktadır.
 
-Search access to invitation codes has been restricted to reduce the risk of unauthorized discovery.
+## 6. Davet Kodu Güvenliği
 
-## 7. Known Security Considerations
+İşletme davet kodları hassas bilgi olarak değerlendirilmektedir.
 
-The following areas require further verification before public launch:
+Yetkisiz kullanıcıların bu kodları arama yoluyla keşfetme riskini azaltmak amacıyla erişim kısıtlamaları uygulanmıştır.
 
-- Cross-business data isolation
-- Field-level privacy and search permissions
-- File and attachment access
-- Invitation-code joining workflow
-- Backend workflow authentication
-- Stripe webhook security
-- Role-based access across all pages and workflows
+## 7. Doğrulanması Gereken Güvenlik Alanları
 
-## 8. Payment Security
+Uygulamanın genel kullanıma açılmasından önce aşağıdaki alanların ayrıca incelenmesi gerekmektedir:
 
-Stripe integration exists in the application, but payment processing and webhook behavior have not been fully validated.
+- İşletmeler arası veri izolasyonu
+- Alan düzeyindeki gizlilik ve arama izinleri
+- Dosya ve ek erişim izinleri
+- Davet koduyla işletmeye katılma süreci
+- Arka plan iş akışlarının kimlik doğrulaması
+- Stripe webhook güvenliği
+- Tüm sayfa ve iş akışlarında rol bazlı erişim
 
-Payments should not be considered production-ready until the integration is tested in an appropriate paid Bubble environment.
+## 8. Ödeme Güvenliği
 
-## 9. Security Status
+Uygulamada Stripe entegrasyonu bulunmaktadır. Ancak ödeme işlemleri ve webhook davranışları henüz tam olarak doğrulanmamıştır.
 
-Security improvements have been applied during development. However, this document does not represent a completed security audit or guarantee of production security.
+Ödeme sistemi, uygun ücretli Bubble ortamında gerekli kontroller tamamlanmadan gerçek kullanıma hazır kabul edilmemelidir.
 
-A full security review is required before public launch.
+## 9. Güvenlik Durumu
+
+Geliştirme sürecinde çeşitli güvenlik iyileştirmeleri uygulanmıştır.
+
+Ancak bu belge tamamlanmış bir güvenlik denetimi anlamına gelmez ve uygulamanın tüm güvenlik gereksinimlerini karşıladığını garanti etmez.
+
+Genel kullanıma açılmadan önce kapsamlı bir güvenlik incelemesi yapılmalıdır.

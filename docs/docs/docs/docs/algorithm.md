@@ -1,69 +1,73 @@
-# NimbleShift – Smart Shift Planning Algorithm
+# NimbleShift – Akıllı Vardiya Planlama Algoritması
 
-## 1. Overview
+## 1. Genel Bakış
 
-NimbleShift includes a smart shift planning feature designed to help managers create shift suggestions based on staffing requirements and employee availability.
+NimbleShift, işletmelerin personel ihtiyaçlarına ve personel uygunluklarına göre vardiya önerileri oluşturmasına yardımcı olan akıllı vardiya planlama özelliğine sahiptir.
 
-The planning logic is implemented using Bubble Workflows.
+Planlama mantığı Bubble İş Akışları (Workflows) kullanılarak uygulanmıştır.
 
-## 2. Planning Process
+## 2. Planlama Süreci
 
-The current planning process follows these steps:
+Mevcut planlama süreci şu adımlardan oluşur:
 
-1. The manager defines staffing requirements.
-2. The system starts the smart planning workflow.
-3. The workflow evaluates eligible employees.
-4. Employees are selected for shift suggestions.
-5. Suggestions are saved as draft shifts.
-6. The manager reviews the generated suggestions.
-7. The manager can regenerate or discard suggestions.
-8. Approved suggestions are converted into actual shifts.
+1. Yönetici personel ihtiyaçlarını tanımlar.
+2. Akıllı planlama iş akışı başlatılır.
+3. Sistem uygun personelleri değerlendirir.
+4. Uygun personeller vardiya önerileri için seçilir.
+5. Öneriler taslak vardiya olarak kaydedilir.
+6. Yönetici oluşturulan önerileri inceler.
+7. Yönetici önerileri yeniden oluşturabilir veya silebilir.
+8. Onaylanan öneriler gerçek vardiyalara dönüştürülür.
 
-## 3. Draft Shift Management
+## 3. Taslak Vardiya Yönetimi
 
-The application uses the `onerilen` field in the Vardiyalar data type to distinguish suggestions from actual shifts.
+Uygulama, Vardiyalar veri türündeki `onerilen` alanını kullanarak taslak öneriler ile gerçek vardiyaları birbirinden ayırır.
 
-- `onerilen = yes`: The record is a draft suggestion.
-- `onerilen = no`: The record is an actual shift.
+- `onerilen = yes`: Kayıt bir taslak vardiya önerisidir.
+- `onerilen = no`: Kayıt gerçek bir vardiyadır.
 
-This allows suggestions to be reviewed before becoming part of the real shift schedule.
+Bu yapı, önerilerin gerçek vardiya planına dahil edilmeden önce yönetici tarafından incelenmesini sağlar.
 
-## 4. Employee Selection
+## 4. Personel Seçimi
 
-The current selection mechanism chooses randomly among eligible employees.
+Mevcut seçim mekanizması, uygun personeller arasından rastgele seçim yapar.
 
-Employees who have no shift during the relevant week receive priority.
+İlgili hafta içerisinde henüz vardiyası bulunmayan personele öncelik verilir.
 
-After employees without a shift have been prioritized, selection becomes random among the remaining eligible employees.
+Vardiyası bulunmayan personeller önceliklendirildikten sonra kalan uygun personeller arasından rastgele seçim yapılır.
 
-## 5. Regeneration
+## 5. Önerileri Yeniden Oluşturma
 
-Managers can regenerate unapproved draft suggestions.
+Yönetici, henüz onaylanmamış taslak vardiya önerilerini yeniden oluşturabilir.
 
-The regeneration process includes draft cleanup to prevent old suggestions from remaining alongside newly generated ones.
+Yeniden oluşturma sürecinde ilgili eski taslakların temizlenmesi hedeflenir. Böylece yeni önerilerle eski önerilerin birlikte kalması önlenir.
 
-## 6. Approval
+## 6. Vardiya Onaylama
 
-When a manager approves a suggestion, the application checks the approval conditions and converts the draft into a planned shift.
+Yönetici bir öneriyi onayladığında uygulama gerekli koşulları kontrol eder ve taslak kaydı planlanmış vardiyaya dönüştürür.
 
-The approval workflow is designed to prevent the same suggestion from being approved more than once.
+Onay iş akışı, aynı önerinin birden fazla kez onaylanmasını önleyecek şekilde düzenlenmiştir.
 
-## 7. Current Limitations
+## 7. Mevcut Sınırlamalar
 
-The current algorithm is not a complete mathematical optimization system.
+Mevcut algoritma tam kapsamlı bir matematiksel optimizasyon sistemi değildir.
 
-It does not guarantee globally optimal shift distribution or perfectly balanced working hours.
+Vardiyaların tüm personel arasında matematiksel olarak en dengeli biçimde dağıtılmasını garanti etmez.
 
-Advanced optimization, fairness scoring, and workload balancing may be considered in future development.
+Gelecekte gelişmiş optimizasyon, adalet puanlaması ve iş yükü dengeleme özellikleri eklenebilir.
 
-## 8. Implementation
+## 8. Kullanılan Teknolojiler
 
-The planning logic currently uses:
+Planlama mantığında şu Bubble özellikleri kullanılmaktadır:
 
 - Bubble Database
 - Bubble Backend Workflows
-- Bubble Workflow Conditions
-- Employee eligibility checks
-- Random employee selection
+- Bubble İş Akışı Koşulları
+- Personel uygunluk kontrolleri
+- Rastgele personel seçimi
 
-No external Python or SQL optimization service is currently used.
+Şu anda harici bir Python veya SQL optimizasyon servisi kullanılmamaktadır.
+
+## 9. Mevcut Durum
+
+Bu belge mevcut planlama yaklaşımını ve bilinen sınırlamaları açıklar. Algoritmanın tüm senaryolarda doğru çalıştığı henüz doğrulanmış değildir.

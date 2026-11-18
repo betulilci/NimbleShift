@@ -1,87 +1,84 @@
-# NimbleShift – Test Scenarios
+# NimbleShift – Test Senaryoları
 
-## 1. Purpose
+## 1. Genel Bakış
 
-This document describes the main scenarios that should be verified before NimbleShift is released for real-world use.
+Bu belge, NimbleShift uygulamasının temel özellikleri için hazırlanmış test senaryolarını içerir.
 
-These scenarios are documented for future validation. They have not yet been confirmed as successfully tested.
+**Önemli:** Aşağıdaki senaryolar dokümantasyon amacıyla hazırlanmıştır. Henüz tamamının uygulama üzerinde çalıştırıldığı veya başarılı olduğu doğrulanmamıştır.
 
-## 2. Authentication
+## 2. Kullanıcı Girişi ve Yetkilendirme
 
-- [ ] A user can create an account.
-- [ ] A registered user can log in.
-- [ ] A user can reset their password.
-- [ ] An unauthenticated visitor cannot access protected pages.
-- [ ] Password policy requirements are enforced.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 1 | Kayıtlı kullanıcı giriş yapar. | Kullanıcı hesabına erişir. |
+| 2 | Hatalı giriş bilgileri girilir. | Giriş işlemi başarısız olur. |
+| 3 | Oturum açmamış kullanıcı korumalı bir sayfaya erişmeye çalışır. | Kullanıcı giriş sayfasına yönlendirilir. |
+| 4 | Kullanıcı kendi rolüne ait olmayan bir işlemi yapmaya çalışır. | Yetkisiz işlem engellenir. |
 
-## 3. Business and User Management
+## 3. İşletme ve Personel Yönetimi
 
-- [ ] A business manager can manage business information.
-- [ ] Users can join a business through the invitation process.
-- [ ] Invitation codes cannot be discovered through unauthorized searches.
-- [ ] Users cannot access another business's records.
-- [ ] User roles restrict access to authorized features.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 5 | Yönetici personel ekler. | Personel kaydı oluşturulur. |
+| 6 | Yönetici personel bilgilerini düzenler. | Değişiklikler kaydedilir. |
+| 7 | Personel başka bir işletmenin kayıtlarına erişmeye çalışır. | Erişim engellenir. |
+| 8 | Abonelik personel limitine ulaşır. | Yeni personel ekleme işlemi sınırlandırılır. |
 
-## 4. Employee Management
+## 4. İzin Yönetimi
 
-- [ ] Authorized users can create employee records.
-- [ ] Authorized users can update employee information.
-- [ ] Inactive employees cannot receive new shifts.
-- [ ] Subscription employee limits are enforced.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 9 | Personel izin talebi oluşturur. | Talep beklemede durumunda kaydedilir. |
+| 10 | Yönetici izin talebini onaylar. | Talep onaylandı durumuna geçer. |
+| 11 | Yönetici izin talebini reddeder. | Talep reddedildi durumuna geçer. |
+| 12 | Yetkili kullanıcı kararı geri alır. | Talep yeniden beklemede durumuna geçer. |
+| 13 | Yetkisiz kullanıcı izin kararını değiştirmeye çalışır. | İşlem engellenir. |
 
-## 5. Leave Management
+## 5. Vardiya Yönetimi
 
-- [ ] An employee can submit a leave request.
-- [ ] An authorized user can approve a leave request.
-- [ ] An authorized user can reject a leave request.
-- [ ] A previous leave decision can be returned to pending status where permitted.
-- [ ] Unauthorized users cannot modify leave decisions.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 14 | Yetkili kullanıcı vardiya oluşturur. | Vardiya kaydedilir. |
+| 15 | Personel kendi vardiyalarını görüntüler. | Yalnızca erişmesine izin verilen vardiyalar gösterilir. |
+| 16 | Personel başka bir personele ait vardiyayı görüntülemeye çalışır. | Yetkisiz erişim engellenir. |
+| 17 | İptal edilmiş vardiya üzerinde işlem yapılmaya çalışılır. | Uygun olmayan işlem engellenir. |
 
-## 6. Shift Management
+## 6. Akıllı Vardiya Planlama
 
-- [ ] Authorized users can create shifts.
-- [ ] Employees can view their own shifts.
-- [ ] Employees cannot access other employees' restricted shift records.
-- [ ] Shift status changes follow the configured workflow rules.
-- [ ] Locked shifts cannot be modified through restricted save flows.
-- [ ] Shift cancellation and exchange respect authorization rules.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 18 | Yönetici akıllı planlamayı başlatır. | Sistem vardiya önerileri oluşturur. |
+| 19 | Personel uygunluk koşullarını karşılamaz. | Personel öneriye dahil edilmez. |
+| 20 | Yönetici önerileri yeniden oluşturur. | Eski taslakların yerine yeni öneriler oluşturulur. |
+| 21 | Yönetici bir öneriyi onaylar. | Öneri gerçek vardiyaya dönüştürülür. |
+| 22 | Aynı öneri ikinci kez onaylanmaya çalışılır. | Yinelenen onay engellenir. |
+| 23 | Yönetici taslak öneriyi siler. | İlgili taslak kaldırılır. |
 
-## 7. Smart Shift Planning
+## 7. Güvenlik ve Veri Erişimi
 
-- [ ] The smart planning workflow creates draft suggestions.
-- [ ] Eligible employees are selected.
-- [ ] Employees without a shift during the relevant week receive priority.
-- [ ] Regeneration removes the relevant previous drafts.
-- [ ] A manager can approve a suggestion.
-- [ ] An approved suggestion cannot be approved again.
-- [ ] A manager can discard an eligible draft.
-- [ ] Discarding a draft does not affect actual shifts.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 24 | Kullanıcı başka bir işletmenin verilerini arar. | Diğer işletmenin verilerine erişemez. |
+| 25 | Personel yönetici yetkisi gerektiren bir işlem yapmaya çalışır. | İşlem engellenir. |
+| 26 | Kullanıcı davet koduyla işletmeye katılmaya çalışır. | Yalnızca geçerli koşulları sağlayan kullanıcı katılabilir. |
+| 27 | Kullanıcı korumalı verilere yetkisiz erişmeye çalışır. | Gizlilik kuralları erişimi engeller. |
 
-## 8. Subscription and Payments
+## 8. Abonelik ve Ödeme
 
-- [ ] Package limits are applied correctly.
-- [ ] Subscription information is synchronized correctly.
-- [ ] Stripe test payments work in the configured test environment.
-- [ ] Stripe webhook events are authenticated and processed safely.
-- [ ] Failed or repeated payment events are handled correctly.
+| No | Senaryo | Beklenen Sonuç |
+|---|---|---|
+| 28 | Kullanıcı abonelik paketini görüntüler. | Paket bilgileri gösterilir. |
+| 29 | Kullanıcı paket limitini aşan işlem yapar. | İşlem paket koşullarına göre sınırlandırılır. |
+| 30 | Ödeme işlemi başlatılır. | Ödeme entegrasyonu doğrulanmadan başarılı kabul edilmez. |
 
-## 9. Responsive Design
+## 9. Test Durumu
 
-- [ ] Main pages work on desktop screens.
-- [ ] Main pages work on tablet screens.
-- [ ] Main pages work on mobile screens.
-- [ ] Forms and navigation remain usable on smaller screens.
+Bu senaryolar test planı niteliğindedir.
 
-## 10. Security
+Her senaryo uygulama üzerinde çalıştırıldığında sonucu ayrıca kaydedilmelidir:
 
-- [ ] Business data is isolated between businesses.
-- [ ] Privacy Rules prevent unauthorized data access.
-- [ ] Backend workflows enforce required authorization checks.
-- [ ] File and attachment access is restricted appropriately.
-- [ ] Sensitive API credentials are not exposed to users.
+- Başarılı
+- Başarısız
+- Henüz test edilmedi
 
-## 11. Test Status
-
-All scenarios above are pending verification.
-
-No scenario should be considered passed until it has been executed and its result recorded.
+Gerçek test sonuçları alınmadan uygulamanın tüm senaryolarda hatasız çalıştığı varsayılmamalıdır.

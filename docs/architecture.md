@@ -1,22 +1,22 @@
-# NimbleShift – System Architecture
+# NimbleShift – Sistem Mimarisi
 
-## 1. Overview
+## 1. Genel Bakış
 
-NimbleShift is a SaaS-based workforce and shift management application developed using Bubble.
+NimbleShift, Bubble platformu kullanılarak geliştirilen SaaS tabanlı bir personel ve vardiya yönetim uygulamasıdır.
 
-The application helps businesses manage employees, leave requests, staffing requirements, and shift planning through a centralized platform.
+Uygulama; işletmelerin personel yönetimi, izin talepleri, personel ihtiyaçları ve vardiya planlama süreçlerini tek bir platform üzerinden yönetmesini amaçlar.
 
-## 2. Technology Stack
+## 2. Kullanılan Teknolojiler
 
-- Application Platform: Bubble
-- Database: Bubble Database
-- Business Logic: Bubble Workflows
-- Access Control: Bubble Privacy Rules
-- User Authentication: Bubble User Authentication
+- Uygulama Platformu: Bubble
+- Veritabanı: Bubble Database
+- İş Mantığı: Bubble Workflows
+- Erişim Kontrolü: Bubble Privacy Rules
+- Kullanıcı Kimlik Doğrulama: Bubble User Authentication
 
-## 3. Main Data Types
+## 3. Ana Veri Türleri
 
-The application currently uses the following data types:
+Uygulama şu anda yedi ana veri türünü kullanmaktadır:
 
 - İşletmeler
 - Kullanıcılar
@@ -26,35 +26,39 @@ The application currently uses the following data types:
 - Kurallar
 - Personel İhtiyaçları
 
-## 4. User Roles
+## 4. Kullanıcı Rolleri
 
 - Yönetici
 - Planlayıcı
 - Personel
 
-Access is designed around user roles and business ownership.
+Erişim yetkileri kullanıcı rolleri ve işletme ilişkileri temelinde düzenlenmiştir.
 
-## 5. Main Application Modules
+## 5. Temel Uygulama Modülleri
 
-- Business Management
-- User Management
-- Employee Management
-- Leave Management
-- Shift Management
-- Smart Shift Suggestions
-- Subscription Management
+- İşletme Yönetimi
+- Kullanıcı Yönetimi
+- Personel Yönetimi
+- İzin Yönetimi
+- Vardiya Yönetimi
+- Akıllı Vardiya Önerileri
+- Abonelik Yönetimi
 
-## 6. Smart Planning Flow
+## 6. Akıllı Vardiya Planlama Süreci
 
-1. The manager defines staffing requirements.
-2. The system evaluates available employees and relevant constraints.
-3. Eligible employees are selected for shift suggestions.
-4. Suggestions are stored as drafts.
-5. The manager can regenerate unapproved drafts.
-6. Approved suggestions are converted into actual shifts.
+1. Yönetici personel ihtiyaçlarını tanımlar.
+2. Sistem uygun personelleri ve ilgili koşulları değerlendirir.
+3. Uygun personeller vardiya önerileri için seçilir.
+4. Öneriler taslak olarak kaydedilir.
+5. Yönetici onaylanmamış taslakları yeniden oluşturabilir.
+6. Onaylanan öneriler gerçek vardiyalara dönüştürülür.
 
-## 7. Security
+## 7. Güvenlik ve Erişim Kontrolü
 
-The application uses Bubble Privacy Rules and workflow-level checks to restrict access to business data.
+Uygulama, işletme verilerine erişimi sınırlandırmak için Bubble Privacy Rules ve iş akışı kontrollerini kullanır.
 
-Security and production readiness require further validation before public launch.
+Güvenlik ve gerçek kullanıma hazırlık süreçleri, genel kullanıma açılmadan önce ayrıca doğrulanmalıdır.
+
+## 8. Mevcut Durum
+
+Bu belge uygulamanın mevcut mimarisini genel hatlarıyla açıklar. Henüz doğrulanmamış özellikler tamamlanmış olarak değerlendirilmemelidir.
